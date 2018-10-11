@@ -1,0 +1,157 @@
+accessible: true
+author: ''
+context: |
+    .. class:: text-justify
+
+        Esta tarea tiene como objetivo evaluar su conocimiento en las áreas de **condicionales** y **ciclos** es decir, se espera que haga uso de las sentencias ``while``, ``for``, ``if`` segun considere necesario.
+
+    |
+
+    Enunciado del problema
+    --------------------------
+
+    .. class:: text-justify
+
+        Usted es un ingeniero en construcciones en la época de los faraones y las pirámides en el antiguo egipto, y curiosamente además, tiene acceso a un computador con un compilador de Python. Se está planeando construir una pirámide pero que sea diferente a las demás, está debe tener forma de triángulo rectángulo por requisito directo del faraón (usted sabe que esa forma ya no corresponde con una pirámide pero usted decide pasar por alto ese pequeño detalle). Su tarea consiste en realizar un programa que dado el número ``n`` de filas de bloques de la pirámide, muestre cómo será su estructura vista horizontalmente.
+
+    |
+    |
+
+    *Entradas*
+    ^^^^^^^^^^^^^^^^
+
+    .. class:: text-justify
+
+        *Su programa deberá leer por entrada estándar (usando input de Python) un número entero n (1 <= n <= 10) que representa el numero de filas de bloques de la construcción.*
+
+    |
+
+    *Salidas*
+    ^^^^^^^^^^^
+
+    *Su programa deberá imprimir en la pantalla (usando print de Python) un patrón de asterizcos que muestre como se vería la construcción. Vea los ejemplos de entradas y salidas para mayor entendimiento.*
+
+    |
+    |
+
+    .. container:: row
+
+        .. container:: col-md-6 text-justify
+
+            *Entrada Ejemplo 1*
+
+            ::
+
+                7
+
+        .. container:: col-md-6 text-justify
+
+            *Salida Ejemplo 1*
+
+            ::
+
+                *
+                **
+                ***
+                ****
+                *****
+                ******
+                *******
+
+    |
+
+    .. container:: row
+
+        .. container:: col-md-6 text-justify
+
+            *Entrada Ejemplo 2*
+
+            ::
+
+                3
+
+        .. container:: col-md-6 text-justify
+
+            *Salida Ejemplo 2*
+
+            ::
+
+                *
+                **
+                ***
+
+    |
+    |
+
+    **La salida debe tener un caracter de nueva linea al final del archivo, de lo contrario puede recibir el veredicto de respuesta incorrecta.**
+environment: multiple_languages
+evaluate: best
+generate_grader: true
+grader_compute_diffs: true
+grader_diff_context_lines: 3
+grader_diff_max_lines: 100
+grader_problem_id: triangle
+grader_test_cases:
+-   output_file: 1.out
+    weight: 1.0
+    input_file: 1.in
+    diff_shown: false
+-   input_file: 10.in
+    output_file: 10.out
+    weight: 1.0
+    diff_shown: false
+-   input_file: 2.in
+    output_file: 2.out
+    weight: 1.0
+    diff_shown: false
+-   output_file: 3.out
+    weight: 1.0
+    input_file: 3.in
+    diff_shown: false
+-   input_file: 4.in
+    output_file: 4.out
+    weight: 1.0
+    diff_shown: false
+-   input_file: 5.in
+    weight: 1.0
+    output_file: 5.out
+    diff_shown: false
+-   output_file: 6.out
+    weight: 1.0
+    input_file: 6.in
+    diff_shown: false
+-   weight: 1.0
+    input_file: 7.in
+    output_file: 7.out
+    diff_shown: false
+-   input_file: 8.in
+    weight: 1.0
+    output_file: 8.out
+    diff_shown: false
+-   input_file: 9.in
+    output_file: 9.out
+    weight: 1.0
+    diff_shown: false
+groups: false
+input_random: '0'
+limits:
+    memory: '100'
+    time: '30'
+    output: '2'
+name: 3. Pirámide de Guiza
+network_grading: false
+order: 1
+problems:
+    triangle:
+        name: Guiza
+        header: '*Escriba o pege el código en el editor*'
+        languages:
+            python3: python3
+        type: code_multiple_languages
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+treat_non_zero_as_runtime_error: true
+weight: 1.0

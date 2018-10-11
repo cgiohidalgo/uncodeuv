@@ -1,0 +1,147 @@
+accessible: true
+author: Andres Rondon
+context: |
+    .. class:: text-justify
+
+        Esta tarea tiene como propósito que usted se familiarice con el sistema de calificación de UNCode. Le pedimos que intente varias soluciones para este ejercicio, la solucion correcta, una solución incorrecta, una solucion que falle en tiempo de ejecución, que no compile etc, con el propósito de que aprenda cuales son los resultados que el sistema de calificación automática provee.
+
+    |
+
+    Enunciado del problema
+    --------------------------
+
+    .. class:: text-justify
+
+        A su hermano pequeño que está cursando tercer grado le están enseñando a sumar números enteros tanto positivos como negativos, la tarea es bastante larga (de alrededor de unas doscientas sumas). **Como su hermano sabe que usted es muy bueno para las matemáticas** le ha pedido que le corrija la tarea. Pero usted está muy ocupado solucionando las tareas del semestre, así que decide que la manera más rápida de ayudarle es creando un **programa que sume dos números.**
+
+    |
+
+    *Entradas*
+    ^^^^^^^^^^^^^^^^
+
+    .. class:: text-justify
+
+        *Su programa deberá leer dos números A y B como si fueran ingresados por el teclado por su hermano menor (use input de Python).*
+
+    |
+
+    *Salidas*
+    ^^^^^^^^^^^
+
+    *Su programa deberá imprimir en la pantalla (usando print de Python) el resultado de sumar A con B. Tenga en cuenta que tanto A como B pueden ser positivos, negativos o cero.*
+
+    |
+    |
+
+    .. container:: row
+
+        .. container:: col-md-6 text-justify
+
+            *Entrada Ejemplo 1*
+
+            ::
+
+                1
+                3
+
+        .. container:: col-md-6 text-justify
+
+            *Salida Ejemplo 1*
+
+            ::
+
+                4
+
+    |
+
+    .. container:: row
+
+        .. container:: col-md-6 text-justify
+
+            *Entrada Ejemplo 2*
+
+            ::
+
+                -450
+                231
+
+        .. container:: col-md-6 text-justify
+
+            *Salida Ejemplo 2*
+
+            ::
+
+                -219
+
+    |
+
+    .. container:: row
+
+        .. container:: col-md-6 text-justify
+
+            *Entrada Ejemplo 3*
+
+            ::
+
+                -110
+                -90
+
+        .. container:: col-md-6 text-justify
+
+            *Salida Ejemplo 3*
+
+            ::
+
+                -200
+
+    |
+    |
+
+    **La salida debe tener un caracter de nueva linea al final del archivo, de lo contrario puede recibir el veredicto de respuesta incorrecta.**
+environment: multiple_languages
+evaluate: best
+generate_grader: true
+grader_compute_diffs: true
+grader_diff_context_lines: 3
+grader_diff_max_lines: 100
+grader_problem_id: sum
+grader_test_cases:
+-   output_file: 1.out
+    input_file: 1.in
+    weight: 1.0
+    diff_shown: false
+-   output_file: 2.out
+    weight: 1.0
+    input_file: 2.in
+    diff_shown: false
+-   input_file: 3.in
+    output_file: 3.out
+    weight: 1.0
+    diff_shown: false
+-   input_file: 4.in
+    output_file: 4.out
+    weight: 1.0
+    diff_shown: false
+groups: false
+input_random: '0'
+limits:
+    memory: '100'
+    time: '10'
+    output: '2'
+name: 1. Calentamiento
+network_grading: true
+order: 0
+problems:
+    sum:
+        type: code_multiple_languages
+        name: A + B
+        languages:
+            python3: python3
+        header: '*Escriba o pege el código en el editor*'
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+treat_non_zero_as_runtime_error: true
+weight: 0.0

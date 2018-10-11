@@ -1,0 +1,144 @@
+accessible: true
+author: Andres Rondon
+context: |+
+    .. class:: text-justify
+
+    |
+
+    Enunciado del problema
+    --------------------------
+
+    .. class:: text-justify
+
+        **Escriba un programa que identifique si un número es primo haciendo la comprobación de sus divisores.** Recuerde que un número es primo si tiene sólo 2 divisores: el propio número y el 1. Tenga en cuenta que basta con comprobar hasta la raíz cuadrada del número, puesto que, si un número tiene un divisor mayor que su raíz cuadrada también lo tendrá menor que su raíz cuadrada. Además, no es necesario saber cuántos divisores tiene un número para saber que es primo, ya que, al encontrar un divisor diferente a los mencionados, sabremos que el número no es primo.**Escriba este programa, con base en las indicaciones anteriores para que interrumpa la búsqueda al hallar un divisor diferente a 1 o al mismo número.****NOTA: para este caso el numero 0 sera "No es primo" y 1 sera "Es primo"
+
+    |
+
+    *Entradas*
+    ^^^^^^^^^^^^^^^^
+
+    .. class:: text-justify
+
+        *Su programa deberá leer un número (A) por teclado (use input de Python).*
+
+    |
+
+    *Salidas*
+    ^^^^^^^^^^^
+
+    *Su programa deberá imprimir en la pantalla (usando print de Python), es primo o no y su numero divisor*
+
+    |
+    |
+
+    .. container:: row
+
+        .. container:: col-md-6 text-justify
+
+            *Entrada Ejemplo 1*
+
+            ::
+
+                75
+
+        .. container:: col-md-6 text-justify
+
+            *Salida Ejemplo 1*
+
+            ::
+
+                0
+                3
+
+    |
+
+    .. container:: row
+
+        .. container:: col-md-6 text-justify
+
+            *Entrada Ejemplo 2*
+
+            ::
+
+                701
+
+        .. container:: col-md-6 text-justify
+
+            *Salida Ejemplo 2*
+
+            ::
+
+                1
+
+    |
+
+    .. container:: row
+
+        .. container:: col-md-6 text-justify
+
+            *Entrada Ejemplo 3*
+
+            ::
+
+                8
+
+        .. container:: col-md-6 text-justify
+
+            *Salida Ejemplo 3*
+
+            ::
+
+                0
+                2
+
+
+    |
+    |
+
+environment: multiple_languages
+evaluate: best
+generate_grader: true
+grader_compute_diffs: true
+grader_diff_context_lines: 3
+grader_diff_max_lines: 100
+grader_problem_id: sum
+grader_test_cases:
+-   input_file: 1.in
+    output_file: 1.out
+    weight: 1.0
+    diff_shown: false
+-   output_file: 2.out
+    input_file: 2.in
+    weight: 1.0
+    diff_shown: false
+-   input_file: 3.in
+    weight: 1.0
+    output_file: 3.out
+    diff_shown: false
+-   input_file: 4.in
+    weight: 1.0
+    output_file: 4.out
+    diff_shown: false
+groups: false
+input_random: '0'
+limits:
+    output: '2'
+    memory: '100'
+    time: '10'
+name: 2. Ejercicio inicial
+network_grading: true
+order: 0
+problems:
+    sum:
+        type: code_multiple_languages
+        languages:
+            python3: python3
+        name: A + B
+        header: '*Escriba o pege el código en el editor*'
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+treat_non_zero_as_runtime_error: true
+weight: 0.0

@@ -1,0 +1,184 @@
+accessible: false
+author: Fabio Gonzalez
+context: |
+    .. class:: text-justify
+
+        Esta tarea tiene como objetivo evaluar su conocimiento en las áreas de **condicionales** y **ciclos** es decir, se espera que haga uso de las sentencias ``while``, ``for``, ``if`` segun considere necesario.
+
+    |
+
+    Enunciado del problema
+    --------------------------
+
+    .. class:: text-justify
+
+        Escriba un programa que lea dos números ``m`` y ``n``,  tales que ``1 <= m <= 20`` y ``0 <= n <= 99``. El programa debe imprimir los numeros de 0 a ``n``, imprimiendo ``m`` numeros por linea. Los números deben estar separados por uno o dos espacios de tal manera que los numeros estén alineados a la derecha en cada columna.
+
+    |
+    |
+
+    *Entradas*
+    ^^^^^^^^^^^^^^^^
+
+    .. class:: text-justify
+
+        *Su programa deberá leer por entrada estándar (usando cin) dos números enteros m y n consecutivamente. Los números estarán separados por un salto de linea.*
+
+    |
+
+    *Salidas*
+    ^^^^^^^^^^^
+
+    *Su programa deberá imprimir en la pantalla (usando cout) los n numeros como se indicó en el enunciado. Ver ejemplo para clarificar dudas.*
+
+    |
+    |
+
+    .. container:: row
+
+        .. container:: col-md-6 text-justify
+
+            *Entrada Ejemplo 1*
+
+            ::
+
+                6
+                21
+
+        .. container:: col-md-6 text-justify
+
+            *Salida Ejemplo 1*
+
+            ::
+
+                 0  1  2  3  4  5
+                 6  7  8  9 10 11
+                12 13 14 15 16 17
+                18 19 20 21
+
+    |
+    |
+
+    .. container:: row
+
+        .. container:: col-md-6 text-justify
+
+            *Entrada Ejemplo 2*
+
+            ::
+
+                4
+                20
+
+        .. container:: col-md-6 text-justify
+
+            *Salida Ejemplo 2*
+
+            ::
+
+                 0  1  2  3
+                 4  5  6  7
+                 8  9 10 11
+                12 13 14 15
+                16 17 18 19
+                20
+
+    |
+    |
+
+    Si solo hay una fila, los numeros sólo deben estar separado por un espacio
+
+    |
+
+    .. container:: row
+
+        .. container:: col-md-6 text-justify
+
+            *Entrada Ejemplo 2*
+
+            ::
+
+                13
+                12
+
+        .. container:: col-md-6 text-justify
+
+            *Salida Ejemplo 2*
+
+            ::
+
+                0 1 2 3 4 5 6 7 8 9 10 11 12
+
+    |
+    |
+
+
+    **No debe haber ningun espacio despues del último número**
+
+    |
+
+    **La salida debe tener un caracter de nueva linea al final del archivo, de lo contrario puede recibir el veredicto de respuesta incorrecta.**
+
+    |
+    |
+
+    Sugerencia: Este problema es más complejo que los anteriores, enfóquese en pasar un caso a la vez en lugar de intentar resolver todos los casos en un solo envío. Recuerde que tiene envíos ilimitados
+environment: multiple_languages
+evaluate: best
+generate_grader: true
+grader_compute_diffs: true
+grader_diff_context_lines: 3
+grader_diff_max_lines: 100
+grader_problem_id: text
+grader_test_cases:
+-   input_file: 1.in
+    weight: 1.0
+    output_file: 1.out
+    diff_shown: false
+-   output_file: 2.out
+    input_file: 2.in
+    weight: 1.0
+    diff_shown: false
+-   weight: 1.0
+    input_file: 3.in
+    output_file: 3.out
+    diff_shown: false
+-   weight: 1.0
+    output_file: 4.out
+    input_file: 4.in
+    diff_shown: false
+-   input_file: 5.in
+    weight: 1.0
+    output_file: 5.out
+    diff_shown: false
+-   output_file: 6.out
+    input_file: 6.in
+    weight: 1.0
+    diff_shown: false
+-   input_file: 7.in
+    weight: 1.0
+    output_file: 7.out
+    diff_shown: false
+groups: false
+input_random: '0'
+limits:
+    output: '2'
+    memory: '100'
+    time: '30'
+name: 4. Alineación de Texto
+network_grading: false
+order: 2
+problems:
+    text:
+        languages:
+            cpp: cpp
+        header: '*Escriba o pege el código en el editor*'
+        name: ''
+        type: code_multiple_languages
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+treat_non_zero_as_runtime_error: true
+weight: 1.0

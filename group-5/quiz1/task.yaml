@@ -1,0 +1,177 @@
+accessible: false
+author: Andres Rondon
+context: |
+    .. class:: text-justify
+
+        Este quiz evaluará los conceptos vistos en clase sobre ciclos y condicionales.
+
+    |
+
+    Enunciado del problema
+    --------------------------
+
+    .. class:: text-justify
+
+        Escriba un programa que lea una secuencia de ``n`` números enteros ``1 <= n <= 100`` y determine si todas las sumas parciales se encuentran en el rango [a, b] ``(-10000 <= a <= b <= 10000)``. Todos los numeros de la lista pertenecen al rango ``[-200, 200]`` inclusive.
+
+    |
+
+    .. class:: text-justify
+
+        Ejemplo: dada la secuencia de numeros ``-3 4 -7 -1 0 10`` las sumas parciales son ``-3 1 -6 -7 -7 3``. Es decir, el k-ésimo numero de la suma parcial es igual a la suma de los primeros k numeros en la lista original.
+
+    |
+
+    *Entradas*
+    ^^^^^^^^^^^^^^^^
+
+    .. class:: text-justify
+
+        La entrada está dividida en 3 líneas. La primera línea contiene el número de elementos de la lista ``n``. La segunda línea contiene los números ``a`` y ``b`` que representan los extremos del rango. Por último, la tercera linea tendrá los ``n`` números enteros separados por un espacio.
+
+    |
+
+    *Salidas*
+    ^^^^^^^^^^^
+
+    .. class:: text-justify
+
+    Su programa deberá imprimir en la pantalla (usando cout) *YES* si todas las sumas parciales estan en el conjunto [a, b]. Por el contrario, si existe alguna suma parcial que se salga de ese rango, deberá imprimir *NO*.
+
+    |
+    |
+
+    .. container:: row
+
+        .. container:: col-md-6 text-justify
+
+            *Entrada Ejemplo 1*
+
+            ::
+
+                6
+                -7 3
+                -3 4 -7 -1 0 10
+
+
+        .. container:: col-md-6 text-justify
+
+            *Salida Ejemplo 1*
+
+            ::
+
+                YES
+
+    |
+
+    .. container:: row
+
+        .. container:: col-md-6 text-justify
+
+            *Entrada Ejemplo 2*
+
+            ::
+
+                6
+                -7 2
+                -3 4 -7 -1 0 10
+
+
+        .. container:: col-md-6 text-justify
+
+            *Salida Ejemplo 2*
+
+            ::
+
+                NO
+
+    |
+
+    .. container:: row
+
+        .. container:: col-md-6 text-justify
+
+            *Entrada Ejemplo 3*
+
+            ::
+
+                1
+                10 10
+                9
+
+
+        .. container:: col-md-6 text-justify
+
+            *Salida Ejemplo 3*
+
+            ::
+
+                NO
+
+    |
+    |
+
+    **La salida debe tener un caracter de nueva linea al final del archivo, de lo contrario puede recibir el veredicto de respuesta incorrecta.**
+environment: multiple_languages
+evaluate: best
+generate_grader: true
+grader_compute_diffs: true
+grader_diff_context_lines: 3
+grader_diff_max_lines: 100
+grader_problem_id: quiz
+grader_test_cases:
+-   input_file: 1.in
+    weight: 1.0
+    output_file: 1.out
+    diff_shown: false
+-   output_file: 2.out
+    input_file: 2.in
+    weight: 1.0
+    diff_shown: false
+-   weight: 1.0
+    input_file: 3.in
+    output_file: 3.out
+    diff_shown: false
+-   weight: 1.0
+    output_file: 4.out
+    input_file: 4.in
+    diff_shown: false
+-   input_file: 5.in
+    weight: 1.0
+    output_file: 5.out
+    diff_shown: false
+-   output_file: 6.out
+    input_file: 6.in
+    weight: 1.0
+    diff_shown: false
+-   output_file: 7.out
+    input_file: 7.in
+    weight: 1.0
+    diff_shown: false
+-   output_file: 8.out
+    weight: 1.0
+    input_file: 8.in
+    diff_shown: false
+groups: false
+input_random: '0'
+limits:
+    output: '2'
+    time: '30'
+    memory: '100'
+name: 5. Quiz, condicionales y ciclos
+network_grading: false
+order: 3
+problems:
+    quiz:
+        name: ''
+        languages:
+            python3: python3
+        header: ''
+        type: code_multiple_languages
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+treat_non_zero_as_runtime_error: true
+weight: 1.0
